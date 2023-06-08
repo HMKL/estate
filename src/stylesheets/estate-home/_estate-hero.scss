@@ -1,0 +1,96 @@
+.estate-hero {
+  .inner {
+    p,
+    a,
+    span {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          height: 700px;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: -1;
+          }
+          &.one,
+          &.two {
+            background-image: url(../images/build4.jpg);
+            background-position: right 35% bottom 45%;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &.two {
+            background-image: url(../images/build2.jpg);
+          }
+          &.three {
+            background-image: url(../images/build3.jpg);
+            background-position: center;
+          }
+          .wrap {
+            width: calc(80% - 30px);
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (min-width: $lg) {
+              width: calc(100% - 30px);
+            }
+            @media (min-width: $xl) {
+              max-width: 1140px;
+              width: calc(100% - 30px);
+              justify-content: flex-start;
+            }
+            .info {
+              width: 300px;
+              height: 300px;
+              border: 5px solid #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              position: relative;
+              //   animation: fadeInLeft 0.5s ease forwards;
+              &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: -1;
+              }
+              p {
+                color: #fff;
+                font-size: 30px;
+                font-weight: 900;
+              }
+              span {
+                font-size: 60px;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .swiper-pagination {
+        &.one {
+          span {
+            width: 15px;
+            height: 15px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            border: 3px solid #fff;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

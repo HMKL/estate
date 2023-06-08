@@ -1,0 +1,62 @@
+.estate-navbar-mobile {
+  background: #fff;
+  position: absolute;
+  left: -100vw;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  z-index: 0;
+  &.show-nav-mobile {
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+  .wrap {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+
+    p,
+    a {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .accordion-item {
+      border-bottom: 1px solid #fff;
+      .mobile-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        .btn-lines {
+          width: 20px;
+          height: 20px;
+          position: relative;
+          span {
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            background: red;
+            top: 50%;
+            left: 0;
+            transform: rotate(140deg);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        &.collapsed {
+          .btn-lines {
+            span {
+              background: #000;
+              transform: rotate(0deg);
+              transition: all 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}

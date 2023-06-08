@@ -1,17 +1,115 @@
-.estate-navbar{
-    .wrap{
-        background: darkorange;
-        margin: 0 auto;
-        width: calc(100% - 30px);
-        @media(min-width: $lg){
-            max-width: 1140px;
-        }
-        .inner{
-            p,
-            a {
-              margin: 0;
-              font-family: "Lato", sans-serif;
-            }
-        }
+.estate-navbar {
+  background: #2c3333;
+  .wrap {
+    margin: 0 auto;
+    width: calc(100% - 30px);
+    @media (min-width: $lg) {
+      max-width: 1140px;
     }
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px 0;
+
+      p,
+      a {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+      .logo {
+        p {
+          color: #fff;
+        }
+      }
+      .phone {
+        a {
+          color: #fff;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .main-nav {
+        display: none;
+        @media (min-width: $lg) {
+          display: block;
+        }
+        ul {
+          width: 400px;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          li {
+            a {
+              text-decoration: none;
+              font-size: 14px;
+              text-transform: uppercase;
+              color: #fff;
+              position: relative;
+              display: inline-block;
+              font-weight: 500;
+
+              &:after {
+                content: none;
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background: #fff;
+                bottom: 0;
+                left: 0;
+                transition: all 0.3s ease-in-out;
+                @media (min-width: $lg) {
+                  content: "";
+                }
+              }
+              &:hover:after {
+                width: 100%;
+                transition: all 0.3s ease-in-out;
+              }
+            }
+          }
+        }
+      }
+      .hamburger {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        span {
+          position: absolute;
+          background: #fff;
+          height: 2px;
+          width: 100%;
+          top: 0;
+          left: 0;
+          &:after,
+          &:before {
+            content: "";
+            position: absolute;
+            background: #fff;
+            height: 2px;
+            width: 50%;
+            top: 7px;
+            right: 0;
+            transition: 0.3s ease-in-out;
+          }
+          &:before {
+            width: 25%;
+            top: 14px;
+          }
+          &.lines {
+            &:after,
+            &:before {
+              width: 100%;
+              transition: 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
 }
