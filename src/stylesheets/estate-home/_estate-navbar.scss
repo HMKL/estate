@@ -1,0 +1,17 @@
+.estate-navbar{
+    .wrap{
+        background: darkorange;
+        margin: 0 auto;
+        width: calc(100% - 30px);
+        @media(min-width: $lg){
+            max-width: 1140px;
+        }
+        .inner{
+            p,
+            a {
+              margin: 0;
+              font-family: "Lato", sans-serif;
+            }
+        }
+    }
+}
