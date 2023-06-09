@@ -40,9 +40,11 @@ let layoutHandler;
 
         let mainswiper = new Swiper("#main-swiper", {
             effect: 'coverflow',
-            speed: 600,
+            speed: 1500,
+
             // autoplay: {
-            //     delay: 4000,
+            //     delay: 3000,
+            //     disableOnInteraction: false,
             // },
             pagination: {
                 el: '.swiper-pagination.one',
@@ -99,6 +101,14 @@ let layoutHandler;
             pulse: true,
             legacy: false,
         });
+
+
+
+        AOS.init({
+            duration: 1200
+        });
+
+
 
 
 

@@ -1,0 +1,100 @@
+.estate-about {
+  background: #272727;
+  .wrap {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    @media (min-width: $lg) {
+      max-width: 1140px;
+    }
+    .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 60px 0 0 0;
+      @media (min-width: $lg) {
+        flex-direction: row;
+      }
+      p,
+      a,
+      span,
+      h1,
+      h2 {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+      .items {
+        &:nth-child(1) {
+          width: 80%;
+          margin: 0 auto;
+          @media (min-width: $lg) {
+            width: 50%;
+            margin: 0;
+          }
+
+          span {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            color: #cee002;
+            padding: 0 0 15px 0;
+          }
+          h2 {
+            color: #fff;
+            padding: 0 0 80px 0;
+          }
+          p {
+            color: #7e7e7e;
+            padding: 0 0 120px 0;
+            @media (min-width: $lg) {
+              padding: 0 0 170px 0;
+            }
+          }
+          .box {
+            width: 194px;
+            height: 170px;
+            border: 5px solid #cee002;
+            border-radius: 10px;
+            position: relative;
+            .info {
+              position: absolute;
+              top: 20%;
+              right: -133px;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              @media (min-width: $lg) {
+                right: -141px;
+              }
+              span {
+                padding: 0;
+                font-size: 64px;
+
+                @media (min-width: $lg) {
+                  font-size: 80px;
+                }
+              }
+              p {
+                padding: 0;
+                color: #fff;
+                width: 50%;
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          width: 80%;
+          margin: 0 auto;
+
+          @media (min-width: $lg) {
+            width: 30%;
+            margin: 0;
+          }
+          p {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
