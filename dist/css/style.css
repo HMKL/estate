@@ -8221,7 +8221,8 @@ section .section-title.no-decoration:after {
 }
 
 .estate-hero .inner .swiper .swiper-wrapper .swiper-slide.one,
-.estate-hero .inner .swiper .swiper-wrapper .swiper-slide.two {
+.estate-hero .inner .swiper .swiper-wrapper .swiper-slide.two,
+.estate-hero .inner .swiper .swiper-wrapper .swiper-slide.three {
   background-image: url(../images/build4.jpg);
   background-position: right 35% bottom 45%;
   background-repeat: no-repeat;
@@ -8234,7 +8235,6 @@ section .section-title.no-decoration:after {
 
 .estate-hero .inner .swiper .swiper-wrapper .swiper-slide.three {
   background-image: url(../images/build3.jpg);
-  background-position: center;
 }
 
 .estate-hero .inner .swiper .swiper-wrapper .swiper-slide .wrap {
@@ -8255,7 +8255,7 @@ section .section-title.no-decoration:after {
 .estate-hero .inner .swiper .swiper-wrapper .swiper-slide .wrap .info {
   width: 300px;
   height: 300px;
-  border: 5px solid #fff;
+  border: 3px solid #fff;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -8269,6 +8269,8 @@ section .section-title.no-decoration:after {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .estate-hero .inner .swiper .swiper-wrapper .swiper-slide .wrap .info:before {
@@ -8278,6 +8280,7 @@ section .section-title.no-decoration:after {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
+  border-radius: 7px;
 }
 
 .estate-hero .inner .swiper .swiper-wrapper .swiper-slide .wrap .info p {
@@ -8287,7 +8290,7 @@ section .section-title.no-decoration:after {
 }
 
 .estate-hero .inner .swiper .swiper-wrapper .swiper-slide .wrap .info span {
-  font-size: 60px;
+  font-size: 50px;
   color: #fff;
 }
 
@@ -8298,6 +8301,88 @@ section .section-title.no-decoration:after {
   background-color: rgba(255, 255, 255, 0);
   border: 3px solid #fff;
   opacity: 1;
+}
+
+.estate-video {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.estate-video .inner {
+  position: relative;
+}
+
+.estate-video .inner p,
+.estate-video .inner a,
+.estate-video .inner span,
+.estate-video .inner h1,
+.estate-video .inner .h1 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.estate-video .inner video {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
+}
+
+.estate-video .inner .text-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: calc(80% - 30px);
+  height: 300px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.estate-video .inner .text-info h1,
+.estate-video .inner .text-info .h1 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.estate-video .inner .text-info h1 span,
+.estate-video .inner .text-info .h1 span {
+  color: #2eca6a;
+  position: relative;
+}
+
+.estate-video .inner .text-info h1 span:after,
+.estate-video .inner .text-info .h1 span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+}
+
+.estate-video .inner .text-info:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  border-radius: 10px;
 }
 
 @media (min-width: 576px) {
@@ -12775,10 +12860,6 @@ section .section-title.no-decoration:after {
   .estate-navbar .wrap .inner .main-nav ul li a:after {
     content: "";
   }
-
-  .estate-hero .inner .swiper .swiper-wrapper .swiper-slide .wrap {
-    width: calc(100% - 30px);
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -14411,6 +14492,23 @@ section .section-title.no-decoration:after {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+
+  .estate-hero .inner .swiper .swiper-wrapper .swiper-slide .wrap .info {
+    width: 400px;
+  }
+
+  .estate-hero .inner .swiper .swiper-wrapper .swiper-slide .wrap .info span {
+    font-size: 70px;
+  }
+
+  .estate-video .inner .text-info {
+    max-width: 1140px;
+  }
+
+  .estate-video .inner .text-info h1,
+  .estate-video .inner .text-info .h1 {
+    font-size: 50px;
   }
 }
 

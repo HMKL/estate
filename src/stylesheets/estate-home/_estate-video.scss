@@ -1,0 +1,68 @@
+.estate-video {
+  width: 100%;
+  padding: 10px 0;
+  .inner {
+    position: relative;
+
+    p,
+    a,
+    span,
+    h1 {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+    video {
+      object-fit: cover;
+      height: 500px;
+      width: 100%;
+      filter: brightness(0.8);
+    }
+    .text-info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(80% - 30px);
+      height: 300px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      @media (min-width: $xl) {
+        max-width: 1140px;
+      }
+
+      h1 {
+        color: #fff;
+        font-size: 30px;
+        @media (min-width: $xl) {
+          font-size: 50px;
+        }
+        span {
+          color: #2eca6a;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background: #fff;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        border-radius: 10px;
+      }
+    }
+  }
+}
