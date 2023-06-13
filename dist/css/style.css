@@ -8019,7 +8019,7 @@ section .section-title.no-decoration:after {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .estate-navbar .wrap .inner p,
@@ -8028,7 +8028,9 @@ section .section-title.no-decoration:after {
   font-family: "Montserrat", sans-serif;
 }
 
-.estate-navbar .wrap .inner .logo p {
+.estate-navbar .wrap .inner .logo a {
+  text-decoration: none;
+  display: inline-block;
   color: #fff;
 }
 
@@ -8191,7 +8193,7 @@ section .section-title.no-decoration:after {
   position: absolute;
   width: 80%;
   height: 2px;
-  background: #2eca6a;
+  background: #cee002;
   top: 50%;
   left: 0;
   -webkit-transform: rotate(140deg);
@@ -8317,11 +8319,12 @@ section .section-title.no-decoration:after {
 
 .estate-video {
   width: 100%;
-  padding: 10px 0 0 0;
+  background: #272727;
 }
 
 .estate-video .inner {
   position: relative;
+  padding: 30px 0 0 0;
 }
 
 .estate-video .inner p,
@@ -8451,7 +8454,7 @@ section .section-title.no-decoration:after {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 60px 0 0 0;
+  padding: 30px 0 30px 0;
 }
 
 .estate-about .wrap .inner p,
@@ -8482,17 +8485,17 @@ section .section-title.no-decoration:after {
 .estate-about .wrap .inner .items:nth-child(1) h2,
 .estate-about .wrap .inner .items:nth-child(1) .h2 {
   color: #fff;
-  padding: 0 0 80px 0;
+  padding: 0 0 70px 0;
 }
 
 .estate-about .wrap .inner .items:nth-child(1) p {
   color: #7e7e7e;
-  padding: 0 0 120px 0;
+  padding: 0 0 70px 0;
 }
 
 .estate-about .wrap .inner .items:nth-child(1) .box {
   width: 194px;
-  height: 170px;
+  height: 220px;
   border: 5px solid #cee002;
   border-radius: 10px;
   position: relative;
@@ -8500,7 +8503,7 @@ section .section-title.no-decoration:after {
 
 .estate-about .wrap .inner .items:nth-child(1) .box .info {
   position: absolute;
-  top: 20%;
+  top: 50%;
   right: -133px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8511,6 +8514,8 @@ section .section-title.no-decoration:after {
   -webkit-justify-content: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 .estate-about .wrap .inner .items:nth-child(1) .box .info span {
@@ -8529,8 +8534,109 @@ section .section-title.no-decoration:after {
   margin: 0 auto;
 }
 
-.estate-about .wrap .inner .items:nth-child(2) p {
-  color: red;
+.estate-about .wrap .inner .items:nth-child(2) .about-image {
+  position: relative;
+  padding: 70px 0 0 0;
+}
+
+.estate-about .wrap .inner .items:nth-child(2) .about-image img {
+  z-index: 1;
+  position: relative;
+}
+
+.estate-about .wrap .inner .items:nth-child(2) .about-image .dots {
+  content: "";
+  position: absolute;
+  background: url(../images/dots.png);
+  width: 100%;
+  height: 100%;
+  top: 30%;
+  left: -100px;
+  z-index: 0;
+}
+
+.estate-footer {
+  background: #272727;
+  position: relative;
+  z-index: 1;
+}
+
+.estate-footer .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  border-top: 1px solid #383838;
+}
+
+.estate-footer .wrap .inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 100px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.estate-footer .wrap .inner p,
+.estate-footer .wrap .inner a,
+.estate-footer .wrap .inner span,
+.estate-footer .wrap .inner h1,
+.estate-footer .wrap .inner .h1,
+.estate-footer .wrap .inner h2,
+.estate-footer .wrap .inner .h2 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.estate-footer .wrap .inner .footer-items {
+  width: 100%;
+}
+
+.estate-footer .wrap .inner .footer-items.one {
+  padding: 0 0 30px 0;
+}
+
+.estate-footer .wrap .inner .footer-items.one P {
+  color: #fff;
+  font-size: 12px;
+}
+
+.estate-footer .wrap .inner .footer-items.two {
+  padding: 0 0 20px 0;
+}
+
+.estate-footer .wrap .inner .footer-items.two a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 0 5px 0;
+  font-size: 13px;
+}
+
+.estate-footer .wrap .inner .footer-items.three a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 0 5px 0;
+  font-size: 13px;
+}
+
+.estate-footer .wrap .inner .footer-items.four a {
+  display: inline-block;
+  text-decoration: none;
+  color: #cee002;
+  padding: 0 0 5px 0;
+  font-size: 13px;
+}
+
+.estate-hero-apartments .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
 }
 
 @media (min-width: 576px) {
@@ -13020,6 +13126,10 @@ section .section-title.no-decoration:after {
     content: "";
   }
 
+  .estate-video .inner {
+    padding: 60px 0 0 0;
+  }
+
   .estate-video .inner .text-info .skills ul li p {
     font-size: 20px;
   }
@@ -13032,11 +13142,17 @@ section .section-title.no-decoration:after {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    padding: 60px 0 60px 0;
   }
 
   .estate-about .wrap .inner .items:nth-child(1) {
     width: 50%;
     margin: 0;
+  }
+
+  .estate-about .wrap .inner .items:nth-child(1) h2,
+  .estate-about .wrap .inner .items:nth-child(1) .h2 {
+    padding: 0 0 80px 0;
   }
 
   .estate-about .wrap .inner .items:nth-child(1) p {
@@ -13054,6 +13170,38 @@ section .section-title.no-decoration:after {
   .estate-about .wrap .inner .items:nth-child(2) {
     width: 30%;
     margin: 0;
+  }
+
+  .estate-about .wrap .inner .items:nth-child(2) .about-image {
+    padding: 0;
+  }
+
+  .estate-footer .wrap {
+    max-width: 1140px;
+  }
+
+  .estate-footer .wrap .inner {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    padding: 140px 0;
+  }
+
+  .estate-footer .wrap .inner .footer-items {
+    width: calc(25% - 40px);
+  }
+
+  .estate-footer .wrap .inner .footer-items.one {
+    padding: 0;
+  }
+
+  .estate-footer .wrap .inner .footer-items.two {
+    padding: 0;
+  }
+
+  .estate-hero-apartments .wrap {
+    max-width: 1140px;
   }
 }
 
