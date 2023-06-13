@@ -8578,7 +8578,7 @@ section .section-title.no-decoration:after {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 100px 0;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -8634,9 +8634,113 @@ section .section-title.no-decoration:after {
   font-size: 13px;
 }
 
+.estate-hero-apartments {
+  background: #272727;
+}
+
 .estate-hero-apartments .wrap {
   width: calc(100% - 30px);
   margin: 0 auto;
+}
+
+.estate-hero-apartments .wrap .inner p,
+.estate-hero-apartments .wrap .inner a,
+.estate-hero-apartments .wrap .inner span,
+.estate-hero-apartments .wrap .inner h1,
+.estate-hero-apartments .wrap .inner .h1,
+.estate-hero-apartments .wrap .inner h2,
+.estate-hero-apartments .wrap .inner .h2,
+.estate-hero-apartments .wrap .inner li {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.estate-hero-apartments .wrap .inner .text-info h1,
+.estate-hero-apartments .wrap .inner .text-info .h1 {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.estate-hero-apartments .wrap .inner .text-info p {
+  color: #fff;
+}
+
+.estate-hero-apartments .wrap .inner .about-project span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #cee002;
+  padding: 0 0 15px 0;
+}
+
+.estate-hero-apartments .wrap .inner .about-project .inner-project {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.estate-hero-apartments .wrap .inner .about-project .inner-project .project-items {
+  width: calc(100%);
+}
+
+.estate-hero-apartments .wrap .inner .about-project .inner-project .project-items ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.estate-hero-apartments .wrap .inner .about-project .inner-project .project-items ul li {
+  color: #fff;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.estate-hero-apartments .wrap .inner .about-project .inner-project .project-items .image {
+  background: url(../images/poza1.jpeg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  background-position: center;
+}
+
+.estate-hero-apartments .wrap .inner .about-apartments .swiper.mySwiper2 .swiper-wrapper .swiper-slide .image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  padding: 0;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: right 35% bottom 45%;
+}
+
+.estate-hero-apartments .wrap .inner .about-apartments .swiper.mySwiper .swiper-wrapper .swiper-slide {
+  background: #333333;
+  opacity: 0.6;
+  padding: 30px;
+  text-align: center;
+}
+
+.estate-hero-apartments .wrap .inner .about-apartments .swiper.mySwiper .swiper-wrapper .swiper-slide p {
+  color: #fff;
+}
+
+.estate-hero-apartments .wrap .inner .about-apartments .swiper.mySwiper .swiper-wrapper .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
 }
 
 @media (min-width: 576px) {
@@ -11552,6 +11656,16 @@ section .section-title.no-decoration:after {
     width: calc(33.3% - 20px);
     padding: 20px 0;
   }
+
+  .estate-hero-apartments .wrap .inner .about-project .inner-project {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .estate-hero-apartments .wrap .inner .about-project .inner-project .project-items {
+    width: calc(50% - 10px);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -13184,7 +13298,6 @@ section .section-title.no-decoration:after {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    width: 100%;
     padding: 140px 0;
   }
 
@@ -13202,6 +13315,14 @@ section .section-title.no-decoration:after {
 
   .estate-hero-apartments .wrap {
     max-width: 1140px;
+  }
+
+  .estate-hero-apartments .wrap .inner .about-project .inner-project .project-items {
+    width: calc(50% - 40px);
+  }
+
+  .estate-hero-apartments .wrap .inner .about-apartments .swiper.mySwiper2 .swiper-wrapper .swiper-slide .image {
+    min-height: 650px;
   }
 }
 

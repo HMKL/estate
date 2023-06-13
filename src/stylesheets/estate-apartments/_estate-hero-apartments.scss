@@ -1,9 +1,161 @@
 .estate-hero-apartments {
+  background: #272727;
   .wrap {
     width: calc(100% - 30px);
     margin: 0 auto;
     @media (min-width: $lg) {
       max-width: 1140px;
     }
+    .inner {
+      p,
+      a,
+      span,
+      h1,
+      h2,
+      li {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+      .text-info {
+        h1 {
+          font-size: 32px;
+          color: #fff;
+          text-align: center;
+          padding: 40px 0;
+        }
+        p {
+          color: #fff;
+        }
+      }
+      .about-project {
+        span {
+          display: inline-block;
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          color: #cee002;
+          padding: 0 0 15px 0;
+        }
+        .inner-project {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          @media (min-width: $md) {
+            flex-direction: row;
+          }
+          .project-items {
+            width: calc(100%);
+            @media (min-width: $md) {
+              width: calc(50% - 10px);
+            }
+            @media (min-width: $lg) {
+              width: calc(50% - 40px);
+            }
+            ul {
+              margin: 0;
+              list-style: none;
+              padding: 0;
+              li {
+                color: #fff;
+                padding: 0 0 10px 0;
+                font-size: 14px;
+              }
+            }
+            .image {
+              background: url(../images/poza1.jpeg);
+              height: 100%;
+              width: 100%;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-repeat: no-repeat;
+              min-height: 300px;
+              background-position: center;
+            }
+          }
+        }
+      }
+      .about-apartments {
+        .swiper {
+          &.mySwiper2 {
+            .swiper-wrapper {
+              //   height: 650px;
+              .swiper-slide {
+                .image {
+                  position: relative;
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  min-height: 300px;
+                  padding: 0;
+                  background-repeat: repeat;
+                  background-size: cover;
+                  background-position: right 35% bottom 45%;
+                  @media (min-width: $lg) {
+                    min-height: 650px;
+                  }
+                }
+              }
+            }
+          }
+          &.mySwiper {
+            .swiper-wrapper {
+              .swiper-slide {
+                background: #333333;
+                opacity: 0.6;
+                padding: 30px;
+                text-align: center;
+                p {
+                  color: #fff;
+                }
+                &.swiper-slide-thumb-active {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
+
+// .swiper {
+//   width: 100%;
+//   height: 300px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// .swiper-slide {
+//   background-size: cover;
+//   background-position: center;
+// }
+
+// .mySwiper2 {
+//   height: 80%;
+//   width: 100%;
+// }
+
+// .mySwiper {
+//   height: 20%;
+//   box-sizing: border-box;
+//   padding: 10px 0;
+// }
+
+// .mySwiper .swiper-slide {
+//   width: 25%;
+//   height: 100%;
+//   opacity: 0.4;
+// }
+
+// .mySwiper .swiper-slide-thumb-active {
+//   opacity: 1;
+// }
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }

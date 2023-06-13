@@ -113,6 +113,50 @@ let layoutHandler;
 
 
 
+        let swiper = new Swiper("#swiper-btn", {
+            loop: true,
+            // spaceBetween: 10,
+            // slidesPerView: 4,
+            // freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                375: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            }
+        });
+
+
+
+        let swiper2 = new Swiper("#swiper-photo", {
+            loop: true,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+            spaceBetween: 10,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+
+
+
+
     });
 })(jQuery);
 
@@ -132,6 +176,7 @@ let layoutHandler;
     })
   }
   addLines();
+
 
 
 
