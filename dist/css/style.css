@@ -8213,6 +8213,32 @@ section .section-title.no-decoration:after {
   font-size: 14px;
 }
 
+.estate-navbar-mobile .wrap .accordion-item .accordion-collapse .content ul {
+  padding: 30px 0 71px 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.estate-navbar-mobile .wrap .accordion-item .accordion-collapse .content ul li {
+  padding: 0 5px 0 0;
+}
+
+.estate-navbar-mobile .wrap .accordion-item .accordion-collapse .content ul li:nth-child(4) {
+  padding: 0;
+}
+
+.estate-navbar-mobile .wrap .accordion-item .accordion-collapse .content ul li a {
+  text-decoration: none;
+  color: #fff;
+  background: #7f7f7f;
+  padding: 6px;
+  display: block;
+}
+
 .estate-hero .inner p,
 .estate-hero .inner a,
 .estate-hero .inner span {
@@ -11795,6 +11821,10 @@ section .section-title.no-decoration:after {
 
   .cta-section {
     padding: 70px 0;
+  }
+
+  .estate-navbar-mobile .wrap .accordion-item .accordion-collapse .content ul {
+    width: 50%;
   }
 
   .estate-video .inner .text-info .skills ul {

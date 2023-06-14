@@ -139,10 +139,10 @@ let layoutHandler;
 
         let swiper2 = new Swiper("#swiper-photo", {
             loop: true,
-            // autoplay: {
-            //     delay: 2000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
             // spaceBetween: 10,
 
             navigation: {
