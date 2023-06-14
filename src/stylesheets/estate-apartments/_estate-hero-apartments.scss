@@ -66,7 +66,6 @@
               background: url(../images/poza1.jpeg);
               height: 100%;
               width: 100%;
-              background-repeat: no-repeat;
               background-size: cover;
               background-repeat: no-repeat;
               min-height: 300px;
@@ -76,10 +75,18 @@
         }
       }
       .about-apartments {
+        padding: 60px 0 0 0;
+        span {
+          display: inline-block;
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          color: #cee002;
+          padding: 0 0 15px 0;
+        }
         .swiper {
           &.mySwiper2 {
             .swiper-wrapper {
-              //   height: 650px;
               .swiper-slide {
                 .image {
                   position: relative;
@@ -119,43 +126,3 @@
     }
   }
 }
-
-// .swiper {
-//   width: 100%;
-//   height: 300px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
-// .swiper-slide {
-//   background-size: cover;
-//   background-position: center;
-// }
-
-// .mySwiper2 {
-//   height: 80%;
-//   width: 100%;
-// }
-
-// .mySwiper {
-//   height: 20%;
-//   box-sizing: border-box;
-//   padding: 10px 0;
-// }
-
-// .mySwiper .swiper-slide {
-//   width: 25%;
-//   height: 100%;
-//   opacity: 0.4;
-// }
-
-// .mySwiper .swiper-slide-thumb-active {
-//   opacity: 1;
-// }
-
-// .swiper-slide img {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }

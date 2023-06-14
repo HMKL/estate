@@ -1,0 +1,127 @@
+.estate-description-apartments {
+  background: #272727;
+  .wrap {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    @media (min-width: $lg) {
+      max-width: 1140px;
+    }
+    p,
+    a,
+    span,
+    h1,
+    h2,
+    li,
+    button {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+    .info {
+      text-align: center;
+      h2 {
+        font-size: 32px;
+        color: #fff;
+        text-align: center;
+        padding: 40px 0;
+      }
+    }
+    .inner {
+      &.one-room,
+      &.two-room {
+        padding: 80px 0 0 0;
+      }
+      span {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 20px;
+        // letter-spacing: 0.1em;
+        color: #cee002;
+        padding: 0 0 15px 0;
+        @media (min-width: $lg) {
+          font-size: 30px;
+        }
+      }
+      .apartments {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @media (min-width: $md) {
+          flex-direction: row;
+        }
+        .item-apartments {
+          width: 100%;
+          margin: 0 0 10px 0;
+          @media (min-width: $md) {
+            width: calc(50% - 10px);
+          }
+          .image {
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 340px;
+            background-position: center;
+          }
+          .accordion {
+            .accordion-item {
+              border: none;
+              border-radius: 0;
+
+              .accordion-button {
+                border-bottom: 1px solid #dee2e6;
+                padding: 5px 16px;
+                &:after {
+                  content: "\f106";
+                  font-family: "Font Awesome 5 Free";
+                  font-weight: 900;
+                  background: none;
+                  color: #000;
+                  transform: rotate(360deg);
+                  width: auto;
+                  height: auto;
+                }
+                &.collapsed {
+                  &:after {
+                    transform: rotate(180deg);
+                  }
+                }
+                &:focus {
+                  box-shadow: none;
+                }
+                &:not(.collapsed) {
+                  background: rgba(0, 0, 0, 0.5);
+                  color: #fff;
+                  &:after {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+            .offer {
+              display: flex;
+              width: 90%;
+              padding: 20px 0 0 0;
+              justify-content: space-between;
+              @media (min-width: $md) {
+                width: 85%;
+              }
+              @media (min-width: $lg) {
+                width: 60%;
+              }
+              a {
+                padding: 10px;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                text-align: center;
+                background: #333333;
+                border: 1px solid #cee002;
+                border-radius: 8px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

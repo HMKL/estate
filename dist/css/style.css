@@ -8432,7 +8432,11 @@ section .section-title.no-decoration:after {
 
 .estate-video .inner .text-info a {
   display: inline-block;
-  color: #fff;
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .estate-about {
@@ -8709,11 +8713,23 @@ section .section-title.no-decoration:after {
   background: url(../images/poza1.jpeg);
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 300px;
   background-position: center;
+}
+
+.estate-hero-apartments .wrap .inner .about-apartments {
+  padding: 60px 0 0 0;
+}
+
+.estate-hero-apartments .wrap .inner .about-apartments span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #cee002;
+  padding: 0 0 15px 0;
 }
 
 .estate-hero-apartments .wrap .inner .about-apartments .swiper.mySwiper2 .swiper-wrapper .swiper-slide .image {
@@ -8741,6 +8757,141 @@ section .section-title.no-decoration:after {
 
 .estate-hero-apartments .wrap .inner .about-apartments .swiper.mySwiper .swiper-wrapper .swiper-slide.swiper-slide-thumb-active {
   opacity: 1;
+}
+
+.estate-description-apartments {
+  background: #272727;
+}
+
+.estate-description-apartments .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.estate-description-apartments .wrap p,
+.estate-description-apartments .wrap a,
+.estate-description-apartments .wrap span,
+.estate-description-apartments .wrap h1,
+.estate-description-apartments .wrap .h1,
+.estate-description-apartments .wrap h2,
+.estate-description-apartments .wrap .h2,
+.estate-description-apartments .wrap li,
+.estate-description-apartments .wrap button {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.estate-description-apartments .wrap .info {
+  text-align: center;
+}
+
+.estate-description-apartments .wrap .info h2,
+.estate-description-apartments .wrap .info .h2 {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.estate-description-apartments .wrap .inner.one-room,
+.estate-description-apartments .wrap .inner.two-room {
+  padding: 80px 0 0 0;
+}
+
+.estate-description-apartments .wrap .inner span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  color: #cee002;
+  padding: 0 0 15px 0;
+}
+
+.estate-description-apartments .wrap .inner .apartments {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .image {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 340px;
+  background-position: center;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item {
+  border: none;
+  border-radius: 0;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button {
+  border-bottom: 1px solid #dee2e6;
+  padding: 5px 16px;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button:after {
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background: none;
+  color: #000;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  width: auto;
+  height: auto;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button.collapsed:after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button:not(.collapsed):after {
+  color: #fff;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .offer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding: 20px 0 0 0;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .offer a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  background: #333333;
+  border: 1px solid #cee002;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 @media (min-width: 576px) {
@@ -11666,6 +11817,20 @@ section .section-title.no-decoration:after {
   .estate-hero-apartments .wrap .inner .about-project .inner-project .project-items {
     width: calc(50% - 10px);
   }
+
+  .estate-description-apartments .wrap .inner .apartments {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .estate-description-apartments .wrap .inner .apartments .item-apartments {
+    width: calc(50% - 10px);
+  }
+
+  .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .offer {
+    width: 85%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -13323,6 +13488,18 @@ section .section-title.no-decoration:after {
 
   .estate-hero-apartments .wrap .inner .about-apartments .swiper.mySwiper2 .swiper-wrapper .swiper-slide .image {
     min-height: 650px;
+  }
+
+  .estate-description-apartments .wrap {
+    max-width: 1140px;
+  }
+
+  .estate-description-apartments .wrap .inner span {
+    font-size: 30px;
+  }
+
+  .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .offer {
+    width: 60%;
   }
 }
 

@@ -100,7 +100,11 @@
       }
       a {
         display: inline-block;
-        color: #fff;
+        color: #000;
+        text-decoration: none;
+        background: #fff;
+        padding: 10px 15px;
+        border-radius: 10px;
       }
     }
   }
