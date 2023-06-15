@@ -7994,8 +7994,8 @@ section .section-title.no-decoration:after {
   display: inline-block;
   text-decoration: none;
   background-color: #454545;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   border-radius: 4px;
   position: fixed;
