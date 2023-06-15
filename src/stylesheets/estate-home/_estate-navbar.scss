@@ -1,6 +1,7 @@
 .estate-navbar {
   background: #272727;
   .wrap {
+    border-bottom: 2px solid #383838;
     margin: 0 auto;
     width: calc(100% - 30px);
     @media (min-width: $lg) {

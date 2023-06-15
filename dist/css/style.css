@@ -8004,6 +8004,7 @@ section .section-title.no-decoration:after {
 }
 
 .estate-navbar .wrap {
+  border-bottom: 2px solid #383838;
   margin: 0 auto;
   width: calc(100% - 30px);
 }
@@ -8820,8 +8821,9 @@ section .section-title.no-decoration:after {
 }
 
 .estate-description-apartments .wrap .inner.one-room,
-.estate-description-apartments .wrap .inner.two-room {
-  padding: 80px 0 0 0;
+.estate-description-apartments .wrap .inner.two-room,
+.estate-description-apartments .wrap .inner.three-room {
+  padding: 100px 0 0 0;
 }
 
 .estate-description-apartments .wrap .inner span {
@@ -8847,6 +8849,7 @@ section .section-title.no-decoration:after {
 .estate-description-apartments .wrap .inner .apartments .item-apartments {
   width: 100%;
   margin: 0 0 10px 0;
+  position: relative;
 }
 
 .estate-description-apartments .wrap .inner .apartments .item-apartments .image {
@@ -8860,11 +8863,13 @@ section .section-title.no-decoration:after {
 .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item {
   border: none;
   border-radius: 0;
+  background: none;
 }
 
 .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button {
-  border-bottom: 1px solid #dee2e6;
-  padding: 5px 16px;
+  padding: 8px 16px;
+  border-radius: 0;
+  font-size: 14px;
 }
 
 .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button:after {
@@ -8879,6 +8884,10 @@ section .section-title.no-decoration:after {
   height: auto;
 }
 
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button.collapsed {
+  border-top: 1px solid #383838;
+}
+
 .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button.collapsed:after {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -8889,12 +8898,16 @@ section .section-title.no-decoration:after {
 }
 
 .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button:not(.collapsed) {
-  background: rgba(0, 0, 0, 0.5);
+  background: #454545;
   color: #fff;
 }
 
 .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-button:not(.collapsed):after {
   color: #fff;
+}
+
+.estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .accordion-item .accordion-collapse {
+  background: #fff;
 }
 
 .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .offer {
@@ -8914,8 +8927,7 @@ section .section-title.no-decoration:after {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  background: #333333;
-  border: 1px solid #cee002;
+  background: #383838;
   border-radius: 8px;
   font-size: 14px;
 }
@@ -13512,8 +13524,16 @@ section .section-title.no-decoration:after {
     max-width: 1140px;
   }
 
+  .estate-hero-apartments .wrap .inner .about-project span {
+    font-size: 30px;
+  }
+
   .estate-hero-apartments .wrap .inner .about-project .inner-project .project-items {
     width: calc(50% - 40px);
+  }
+
+  .estate-hero-apartments .wrap .inner .about-apartments span {
+    font-size: 30px;
   }
 
   .estate-hero-apartments .wrap .inner .about-apartments .swiper.mySwiper2 .swiper-wrapper .swiper-slide .image {
@@ -13524,8 +13544,18 @@ section .section-title.no-decoration:after {
     max-width: 1140px;
   }
 
+  .estate-description-apartments .wrap .inner.one-room,
+  .estate-description-apartments .wrap .inner.two-room,
+  .estate-description-apartments .wrap .inner.three-room {
+    padding: 140px 0 0 0;
+  }
+
   .estate-description-apartments .wrap .inner span {
     font-size: 30px;
+  }
+
+  .estate-description-apartments .wrap .inner .apartments .item-apartments .image {
+    min-height: 500px;
   }
 
   .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .offer {

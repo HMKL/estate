@@ -66,7 +66,7 @@ let layoutHandler;
             selector: ".counter",
 
 
-            start: 0,
+            start: 15,
             end: 55,
             duration: 1.5,
             delay: 10,
@@ -80,7 +80,7 @@ let layoutHandler;
             selector: ".count",
 
 
-            start: 0,
+            start: 2,
             end: 10,
             duration: 0.8,
             delay: 10,
@@ -93,7 +93,7 @@ let layoutHandler;
             selector: ".countertwo",
 
 
-            start: 0,
+            start: 10,
             end: 500,
             duration: 1.5,
             delay: 10,
@@ -105,7 +105,7 @@ let layoutHandler;
 
 
         AOS.init({
-            duration: 1200,
+            duration: 400,
             once: true,
         });
 
