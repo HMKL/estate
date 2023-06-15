@@ -1,0 +1,37 @@
+.scroll-top {
+  #button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #454545;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    &:after {
+      content: "\f077";
+      font-family: FontAwesome;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 14px;
+      line-height: 50px;
+      color: #fff;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #333;
+    }
+  }
+}

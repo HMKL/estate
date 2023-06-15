@@ -7990,6 +7990,46 @@ section .section-title.no-decoration:after {
   content: none;
 }
 
+.scroll-top #button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #454545;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.scroll-top #button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top #button:after {
+  content: "\f077";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.scroll-top #button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
 .carousel-item {
   height: 300px;
   background-size: cover;
@@ -8914,11 +8954,12 @@ section .section-title.no-decoration:after {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 20px 0 0 0;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .offer a {
@@ -11872,6 +11913,7 @@ section .section-title.no-decoration:after {
 
   .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .offer {
     width: 85%;
+    margin: 0;
   }
 }
 
