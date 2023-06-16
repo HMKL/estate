@@ -42,18 +42,19 @@ let layoutHandler;
             effect: 'coverflow',
             speed: 1500,
 
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination.one',
                 clickable: true,
                 dynamicBullets: true,
             },
             coverflowEffect: {
-                rotate: 30,
+                rotate: 20,
                 slideShadows: false,
+
             },
         });
 

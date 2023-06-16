@@ -1,0 +1,40 @@
+{% extends "partials/layout.html" %}
+
+{% block content %}
+
+
+<main class="house">
+    <!-- Estate Navbar -->
+    {% include "partials/estate-home/estate-navbar.html" %}
+    <!-- Estate Navbar end-->
+
+
+    <!-- Estate Navbar-mobile -->
+    {% include "partials/estate-home/estate-navbar-mobile.html" %}
+    <!-- Estate Navbar-mobile end-->
+
+    <!-- Estate House-intro start-->
+    {% include "partials/estate-house/estate-house-intro.html" %}
+    <!-- Estate House-intro end-->
+
+
+    <!-- Estate House-intro start-->
+    {% include "partials/estate-house/estate-house-list.html" %}
+    <!-- Estate House-intro end-->
+
+    <!-- Estate Footer start-->
+    {% include "partials/estate-home/estate-footer.html" %}
+    <!-- Estate Footer end-->
+
+
+
+    <!-- Scroll top start-->
+    {% include "partials/sections/scroll-top.html" %}
+    <!-- Scroll top end -->
+
+
+</main>
+
+
+
+{% endblock %}

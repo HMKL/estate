@@ -8973,6 +8973,229 @@ section .section-title.no-decoration:after {
   font-size: 14px;
 }
 
+.estate-house-intro {
+  background: #fff;
+}
+
+.estate-house-intro .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.estate-house-intro .wrap .inner {
+  padding: 60px 0;
+}
+
+.estate-house-intro .wrap .inner p,
+.estate-house-intro .wrap .inner a,
+.estate-house-intro .wrap .inner h1,
+.estate-house-intro .wrap .inner .h1 {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.estate-house-intro .wrap .inner .hero {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-radius: 0 10px 10px 0px;
+}
+
+.estate-house-intro .wrap .inner .hero .items {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.estate-house-intro .wrap .inner .hero .items:nth-child(2) {
+  display: none;
+}
+
+.estate-house-intro .wrap .inner .hero .items .image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom 0 right 36%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.estate-house-intro .wrap .inner .hero .items .image:before {
+  content: "";
+  display: block;
+  padding: 500px 0 0 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.estate-house-intro .wrap .inner .hero .items .text-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.estate-house-intro .wrap .inner .hero .items .text-info h1,
+.estate-house-intro .wrap .inner .hero .items .text-info .h1 {
+  color: #272727;
+  padding: 0 0 20px 0;
+}
+
+.estate-house-intro .wrap .inner .hero .items .text-info h1 span,
+.estate-house-intro .wrap .inner .hero .items .text-info .h1 span {
+  color: #fff;
+  background: #000;
+}
+
+.estate-house-intro .wrap .inner .hero .items .text-info p {
+  color: #7e7e7e;
+}
+
+.estate-house-list {
+  background: #f7f7f7;
+}
+
+.estate-house-list .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.estate-house-list .wrap .inner {
+  padding: 60px 0;
+}
+
+.estate-house-list .wrap .inner p,
+.estate-house-list .wrap .inner a,
+.estate-house-list .wrap .inner h1,
+.estate-house-list .wrap .inner .h1,
+.estate-house-list .wrap .inner h2,
+.estate-house-list .wrap .inner .h2,
+.estate-house-list .wrap .inner li {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.estate-house-list .wrap .inner .text h2,
+.estate-house-list .wrap .inner .text .h2 {
+  color: #000;
+  position: relative;
+  padding: 0 0 0 10px;
+}
+
+.estate-house-list .wrap .inner .text h2:after,
+.estate-house-list .wrap .inner .text .h2:after {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 4px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.estate-house-list .wrap .inner .house {
+  padding: 60px 0;
+}
+
+.estate-house-list .wrap .inner .house .house-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items {
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 2px 2px 0 rgba(32, 33, 37, 0.1);
+  margin: 0 0 2px 0;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom 0 right 36%;
+  position: relative;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .image:before {
+  content: "";
+  display: block;
+  padding: 300px 0 0 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .inside {
+  padding: 20px;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .inside p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .inside .info {
+  padding: 10px 0 0 0;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .inside .info p {
+  font-size: 14px;
+  text-align: start;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .inside .details {
+  padding: 20px 0 0 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .inside .details .item-detail {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .inside .details .item-detail ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.estate-house-list .wrap .inner .house .house-list .items .inside .details .item-detail ul li p {
+  font-size: 14px;
+}
+
 @media (min-width: 576px) {
   .container,
   .container-sm {
@@ -11915,6 +12138,26 @@ section .section-title.no-decoration:after {
     width: 85%;
     margin: 0;
   }
+
+  .estate-house-intro .wrap .inner .hero .items {
+    width: 50%;
+    margin: 0;
+  }
+
+  .estate-house-intro .wrap .inner .hero .items:nth-child(2) {
+    display: block;
+  }
+
+  .estate-house-list .wrap .inner .house .house-list {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .estate-house-list .wrap .inner .house .house-list .items {
+    width: calc(50% - 5px);
+    margin: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -13602,6 +13845,24 @@ section .section-title.no-decoration:after {
 
   .estate-description-apartments .wrap .inner .apartments .item-apartments .accordion .offer {
     width: 60%;
+  }
+
+  .estate-house-intro .wrap {
+    max-width: 1140px;
+  }
+
+  .estate-house-list .wrap {
+    max-width: 1140px;
+  }
+
+  .estate-house-list .wrap .inner .house .house-list .items .inside .details {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .estate-house-list .wrap .inner .house .house-list .items .inside .details .item-detail {
+    width: calc(50% - 20px);
   }
 }
 
