@@ -39,20 +39,20 @@ let layoutHandler;
 
 
         let mainswiper = new Swiper("#main-swiper", {
-            effect: 'coverflow',
+            effect: 'fade',
             speed: 1500,
 
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
             pagination: {
                 el: '.swiper-pagination.one',
                 clickable: true,
                 dynamicBullets: true,
             },
             coverflowEffect: {
-                rotate: 20,
+                // rotate: 20,
                 slideShadows: false,
 
             },
