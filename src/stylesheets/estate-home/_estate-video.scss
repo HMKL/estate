@@ -1,12 +1,12 @@
 .estate-video {
   width: 100%;
-  background: #272727;
+  background: #454545;
 
   .inner {
     position: relative;
-    padding: 30px 0 0 0;
+    padding: 30px 0 30px 0;
     @media (min-width: $lg) {
-      padding: 60px 0 0 0;
+      padding: 120px 0 120px 0;
     }
 
     p,

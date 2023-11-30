@@ -63,11 +63,14 @@
             .info {
               position: absolute;
               top: 50%;
-              right: -133px;
+              right: 0px;
               display: flex;
               align-items: center;
               justify-content: space-evenly;
               transform: translate(0, -50%);
+              @media (min-width: $md) {
+                right: -133px;
+              }
               @media (min-width: $lg) {
                 right: -141px;
               }
