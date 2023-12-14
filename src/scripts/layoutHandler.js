@@ -42,10 +42,10 @@ let layoutHandler;
             effect: 'fade',
             speed: 1500,
 
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination.one',
                 clickable: true,

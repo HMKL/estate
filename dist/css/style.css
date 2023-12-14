@@ -8383,39 +8383,31 @@ section .section-title.no-decoration:after {
 
 .estate-video {
   width: 100%;
-  background: #272727;
+  background: #2f2f2f;
 }
 
-.estate-video .inner {
+.estate-video .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.estate-video .wrap .inner {
   position: relative;
-  padding: 30px 0 0 0;
+  padding: 30px 0 30px 0;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.estate-video .inner p,
-.estate-video .inner a,
-.estate-video .inner span,
-.estate-video .inner h1,
-.estate-video .inner .h1 {
+.estate-video .wrap .inner p,
+.estate-video .wrap .inner a,
+.estate-video .wrap .inner span,
+.estate-video .wrap .inner h1,
+.estate-video .wrap .inner .h1 {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
-.estate-video .inner video {
-  object-fit: cover;
-  height: 500px;
-  width: 100%;
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.8);
-}
-
-.estate-video .inner .text-info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: calc(80% - 30px);
-  height: 300px;
+.estate-video .wrap .inner .text-info {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -8429,22 +8421,23 @@ section .section-title.no-decoration:after {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 0 auto;
 }
 
-.estate-video .inner .text-info h1,
-.estate-video .inner .text-info .h1 {
+.estate-video .wrap .inner .text-info h1,
+.estate-video .wrap .inner .text-info .h1 {
   color: #fff;
   font-size: 30px;
 }
 
-.estate-video .inner .text-info h1 span,
-.estate-video .inner .text-info .h1 span {
+.estate-video .wrap .inner .text-info h1 span,
+.estate-video .wrap .inner .text-info .h1 span {
   color: #cee002;
   position: relative;
 }
 
-.estate-video .inner .text-info h1 span:after,
-.estate-video .inner .text-info .h1 span:after {
+.estate-video .wrap .inner .text-info h1 span:after,
+.estate-video .wrap .inner .text-info .h1 span:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -8454,22 +8447,12 @@ section .section-title.no-decoration:after {
   left: 0;
 }
 
-.estate-video .inner .text-info:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-  border-radius: 10px;
-}
-
-.estate-video .inner .text-info .skills {
+.estate-video .wrap .inner .text-info .skills {
   width: 80%;
   margin: 0 auto;
 }
 
-.estate-video .inner .text-info .skills ul {
+.estate-video .wrap .inner .text-info .skills ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -8484,17 +8467,17 @@ section .section-title.no-decoration:after {
   flex-direction: column;
 }
 
-.estate-video .inner .text-info .skills ul li {
+.estate-video .wrap .inner .text-info .skills ul li {
   width: 100%;
   padding: 5px 0;
 }
 
-.estate-video .inner .text-info .skills ul li p {
+.estate-video .wrap .inner .text-info .skills ul li p {
   color: #cee002;
   font-size: 16px;
 }
 
-.estate-video .inner .text-info a {
+.estate-video .wrap .inner .text-info a {
   display: inline-block;
   color: #000;
   text-decoration: none;
@@ -12100,13 +12083,13 @@ section .section-title.no-decoration:after {
     width: 50%;
   }
 
-  .estate-video .inner .text-info .skills ul {
+  .estate-video .wrap .inner .text-info .skills ul {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 
-  .estate-video .inner .text-info .skills ul li {
+  .estate-video .wrap .inner .text-info .skills ul li {
     width: calc(33.3% - 20px);
     padding: 20px 0;
   }
@@ -13729,11 +13712,11 @@ section .section-title.no-decoration:after {
     content: "";
   }
 
-  .estate-video .inner {
-    padding: 60px 0 0 0;
+  .estate-video .wrap .inner {
+    padding: 60px 0 60px 0;
   }
 
-  .estate-video .inner .text-info .skills ul li p {
+  .estate-video .wrap .inner .text-info .skills ul li p {
     font-size: 20px;
   }
 
@@ -15503,12 +15486,12 @@ section .section-title.no-decoration:after {
     font-size: 70px;
   }
 
-  .estate-video .inner .text-info {
+  .estate-video .wrap .inner .text-info {
     max-width: 1140px;
   }
 
-  .estate-video .inner .text-info h1,
-  .estate-video .inner .text-info .h1 {
+  .estate-video .wrap .inner .text-info h1,
+  .estate-video .wrap .inner .text-info .h1 {
     font-size: 50px;
   }
 }
