@@ -8383,7 +8383,11 @@ section .section-title.no-decoration:after {
 
 .estate-video {
   width: 100%;
+<<<<<<< HEAD
   background: #2f2f2f;
+=======
+  background: #454545;
+>>>>>>> d75bf953b00cfcc05c0e838d45f4d465404533f2
 }
 
 .estate-video .wrap {
@@ -8394,8 +8398,11 @@ section .section-title.no-decoration:after {
 .estate-video .wrap .inner {
   position: relative;
   padding: 30px 0 30px 0;
+<<<<<<< HEAD
   width: 80%;
   margin: 0 auto;
+=======
+>>>>>>> d75bf953b00cfcc05c0e838d45f4d465404533f2
 }
 
 .estate-video .wrap .inner p,
@@ -8555,7 +8562,7 @@ section .section-title.no-decoration:after {
 .estate-about .wrap .inner .items:nth-child(1) .box .info {
   position: absolute;
   top: 50%;
-  right: -133px;
+  right: 0px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -12094,6 +12101,10 @@ section .section-title.no-decoration:after {
     padding: 20px 0;
   }
 
+  .estate-about .wrap .inner .items:nth-child(1) .box .info {
+    right: -133px;
+  }
+
   .estate-hero-apartments .wrap .inner .about-project .inner-project {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -13712,8 +13723,13 @@ section .section-title.no-decoration:after {
     content: "";
   }
 
+<<<<<<< HEAD
   .estate-video .wrap .inner {
     padding: 60px 0 60px 0;
+=======
+  .estate-video .inner {
+    padding: 120px 0 120px 0;
+>>>>>>> d75bf953b00cfcc05c0e838d45f4d465404533f2
   }
 
   .estate-video .wrap .inner .text-info .skills ul li p {
